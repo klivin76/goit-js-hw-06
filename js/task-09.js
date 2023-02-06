@@ -6,9 +6,10 @@ function getRandomHexColor() {
 }
 
 btnEl.addEventListener("click", () => {
- document.body.style.backgroundColor = getRandomHexColor();
-  spanEl.textContent = document.body.style.backgroundColor;
-});
+  const color = getRandomHexColor();
+ document.body.style.backgroundColor = color;
+  spanEl.textContent = color;
+  });
 
 
 
