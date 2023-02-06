@@ -9,7 +9,7 @@ function onBtnSubmit(e) {
     if (email.value === "" || password.value === "") {
         return console.log(alert("Увага! Усі поля повинні бути заповнені, бо прийде воєнком!"));
     }
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
+    console.log({ email: email.value, password: password.value });
     e.currentTarget.reset();
 }
 
